@@ -203,7 +203,7 @@ public class EdScreenRecorderPlugin implements FlutterPlugin, ActivityAware, Met
         } catch (Exception e) {
             System.out.println("Error:" + e.getMessage());
         }
-        startRecordingScreen();
+        // startRecordingScreen();
     }
 
     @Override
