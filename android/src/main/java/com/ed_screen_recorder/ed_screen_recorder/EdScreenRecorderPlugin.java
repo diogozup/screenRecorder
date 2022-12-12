@@ -201,8 +201,10 @@ public class EdScreenRecorderPlugin implements FlutterPlugin, ActivityAware, Met
         try {
             flutterResult.success(jsonObj.toString());
         } catch (Exception e) {
-            System.out.println("Error:" + e.getMessage());
+            System.ou
+            t.println("Error:" + e.getMessage());
         }
+        startRecordingScreen();
     }
 
     @Override
