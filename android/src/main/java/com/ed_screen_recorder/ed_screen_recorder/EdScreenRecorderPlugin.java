@@ -204,6 +204,7 @@ public class EdScreenRecorderPlugin implements FlutterPlugin, ActivityAware, Met
             System.out.println("Error:" + e.getMessage());
         }
         // startRecordingScreen();
+        
     }
 
     @Override
@@ -232,7 +233,8 @@ public class EdScreenRecorderPlugin implements FlutterPlugin, ActivityAware, Met
         hbRecorder.setVideoFrameRate(videoFrame);
         hbRecorder.setVideoBitrate(videoBitrate);
         hbRecorder.setOutputFormat(fileOutputFormat);
-        hbRecorder.setMaxDuration(30);
+        // hbRecorder.setMaxDuration(30); 30secs for testing purposes
+        hbRecorder.setMaxDuration(60 * 20); //60sec x 20 = 20min
     }
 
     private void setOutputPath(boolean addTimeCode, String fileName,String dirPathToSave) throws IOException {
