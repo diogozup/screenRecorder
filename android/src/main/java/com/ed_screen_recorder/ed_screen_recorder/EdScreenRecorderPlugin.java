@@ -234,7 +234,7 @@ public class EdScreenRecorderPlugin implements FlutterPlugin, ActivityAware, Met
         hbRecorder.setVideoBitrate(videoBitrate);
         hbRecorder.setOutputFormat(fileOutputFormat);
         // hbRecorder.setMaxDuration(30); 30secs for testing purposes
-        hbRecorder.setMaxDuration(60 * 20); //60sec x 20 = 20min
+        hbRecorder.setMaxDuration(60);
     }
 
     private void setOutputPath(boolean addTimeCode, String fileName,String dirPathToSave) throws IOException {
